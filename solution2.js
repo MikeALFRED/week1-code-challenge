@@ -6,7 +6,9 @@ function caLculateDemeritPoints(speed){
         console.log("OK")
     }
      let excessSpeed = speed -speedlimit
+
      // I have used Maith.ceil so if demeritPoints ends up being in decimal points it`s rounded up
+
      let demeritPoints = Math.ceil(excessSpeed / kmPerDemeritPoint)
 
     if(demeritPoints > demeritPointsThreashHold){
@@ -15,8 +17,13 @@ function caLculateDemeritPoints(speed){
         console.log(demeritPoints + "points")
     }
 }
-// converting speed to a floating-point number
+
 Input = "Enter car`s speed"
+
+// converting Input to a floating number by using parseFloat
+
 let speed = parseFloat(Input)
+
 //function call
+
  caLculateDemeritPoints(speed)

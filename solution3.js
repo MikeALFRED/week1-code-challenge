@@ -1,15 +1,16 @@
 function calculateNetSalary(basicSalary,benefits){
-    let taxRate = 0.25
+    let taxrate = 0.25
     let nhifRate = 0.05
     let nssfRate = 0.06
 
     // calculating the grosssalary,payee,nhifdeductions,nssfdeductions,netsalary
 
      let grossSalary = basicSalary + benefits
-     let payee = grossSalary * taxRate
+     let payee = grossSalary * taxrate
      let nhifDeductions = grossSalary * nhifRate
      let nssfDeductions = grossSalary * nssfRate
      let netSalary = grossSalary - payee - nhifDeductions - nssfDeductions
+  
 
 // outputting the results by logging them
 
@@ -23,13 +24,13 @@ function calculateNetSalary(basicSalary,benefits){
 
 Input = ("Enter basic salary")
 
-// converting Input to a floating number by using parseFloat
+// converting Input which is a string  to a floating number by using parseFloat
 
 let basicSalary = parseFloat(Input)
 
 input = ("Enter benefits")
 
-// converting input to a floating number by using parseFloat
+// converting input  which is a string to a floating number by using parseFloat
 
 let benefits = parseFloat(input)
 

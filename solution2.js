@@ -20,7 +20,7 @@ function caLculateDemeritPoints(speed){
 
 Input = "Enter car`s speed"
 
-// converting Input to a floating number by using parseFloat
+// converting Input which is a string to a floating number by using parseFloat
 
 let speed = parseFloat(Input)
 

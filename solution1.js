@@ -1,8 +1,11 @@
 Input = ("enter students marks:")
-//converting marks to a floating -point number
+
+//converting Input to a floating -point number
+
  let marks = parseFloat(Input)
  
 //checking if marks is between 0 and 100 by using the AND Operator
+
 if(marks>=0 && marks<=100){
     let grade
 
@@ -17,9 +20,10 @@ if(marks>=0 && marks<=100){
     } else {
         grade = 'E' 
     }
+
     // Output the grade
         
     console.log ( grade)
 } else{
    console.log('!!!!Marks should be between 0 and 100' )
-}
+}g
